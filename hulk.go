@@ -263,7 +263,7 @@ func httpcall(url, host, method, data, cookie string, headers arrayFlags, s chan
 			Timeout:   60 * time.Second,
 			KeepAlive: 60 * time.Second,
 		}).DialContext,
-		ForceAttemptHTTP2:     true,
+		//ForceAttemptHTTP2:     true,
 		MaxIdleConns:          500,
 		IdleConnTimeout:       90 * time.Second,
 		TLSHandshakeTimeout:   60 * time.Second,
